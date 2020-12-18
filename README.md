@@ -18,29 +18,36 @@ require_once('inc.php');
 
 $base = new dbcq($db);
 
-/*-----------SELECT-----------*/
-// Выбтать
-//$select = $base->select("SELECT * FROM `таблица` WHERE `id`=? and `text`=?", [3,'ttg']);
-//$select = $base->select("SELECT * FROM `таблица` WHERE `id`=?", [2]);
-/*-----------SELECTALL-----------*/
-// выбрать все записи из таблицы
-//$data = $base->selectall("SELECT * FROM `таблица`");
-/*-----------INSERT-----------*/
-// вставить
-//$base->insert("INSERT INTO `таблица` SET `text`=?",['ghbdtn']);
-//$base->insert("INSERT INTO `таблица` SET `text`=?,`name`=?",['ghbdtn,'вася']);
-/*-----------UPDATE-----------*/
-// обновить
-//$base->update("UPDATE `таблица` SET `result`=?,`world`=? WHERE `id`=?",['result','world',1]);
-/*-----------SEARCH-----------*/
-// Искать в базе
-//$search = $base->search("SELECT * FROM `таблица` WHERE `text` LIKE ?",'t');
-/*-----------DELETE-----------*/
-// Удалить запись из страницы
-//$base->delete("DELETE FROM `таблица` WHERE `id`=?", [1]);
-/*-----------WHILE-----------*/
-//$result_while = $base->dbwhile("SELECT * FROM `таблица` WHERE `id` =?",[$id]);
-//while($row = $result_while->fetch(PDO::FETCH_ASSOC)){}
-/*-----------WHILEALL-----------*/
-//$result_whileall = $base->dbwhileall("SELECT * FROM `таблица`");
-//while($row = $result_whileall->fetch(PDO::FETCH_ASSOC)){}
+/*-----------SELECT-----------*/<br>
+// Выбтать<br>
+//$select = $base->select("SELECT * FROM `таблица` WHERE `id`=? and `text`=?", [3,'ttg']);<br>
+//$select = $base->select("SELECT * FROM `таблица` WHERE `id`=?", [2]);<br>
+
+/*-----------SELECTALL-----------*/<br>
+// выбрать все записи из таблицы<br>
+//$data = $base->selectall("SELECT * FROM `таблица`");<br>
+
+/*-----------INSERT-----------*/<br>
+// вставить<br>
+//$base->insert("INSERT INTO `таблица` SET `text`=?",['ghbdtn']);<br>
+//$base->insert("INSERT INTO `таблица` SET `text`=?,`name`=?",['ghbdtn,'вася']);<br>
+
+/*-----------UPDATE-----------*/<br>
+// обновить<br>
+//$base->update("UPDATE `таблица` SET `result`=?,`world`=? WHERE `id`=?",['result','world',1]);<br>
+
+/*-----------SEARCH-----------*/<br>
+// Искать в базе<br>
+//$search = $base->search("SELECT * FROM `таблица` WHERE `text` LIKE ?",'t');<br>
+
+/*-----------DELETE-----------*/<br>
+// Удалить запись из страницы<br>
+//$base->delete("DELETE FROM `таблица` WHERE `id`=?", [1]);<br>
+
+/*-----------WHILE-----------*/<br>
+//$result_while = $base->dbwhile("SELECT * FROM `таблица` WHERE `id` =?",[$id]);<br>
+//while($row = $result_while->fetch(PDO::FETCH_ASSOC)){}<br>
+
+/*-----------WHILEALL-----------*/<br>
+//$result_whileall = $base->dbwhileall("SELECT * FROM `таблица`");<br>
+//while($row = $result_whileall->fetch(PDO::FETCH_ASSOC)){}<br>
