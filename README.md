@@ -14,6 +14,9 @@ SELECT INSERT UPDATE
 
 // Пример 
 
+// Подключаемся к базе в файле config.php
+// Далее -->
+
 require_once('inc.php');
 
 $base = new dbcq($db);
